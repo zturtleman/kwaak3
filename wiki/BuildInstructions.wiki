@@ -2,7 +2,7 @@ This page describes how to compile Kwaak3 for Android.
 
 = Introduction =
 
-Prerequisites
+Prerequisites:
   * Android SDK >= 1.6
   * Android NDK 1.6
   * (optionally) gcc 4.4.0 from android git to create a Neon optimized build
@@ -22,7 +22,7 @@ This section describes how to build each part.
   * Uncomment the ANDROID_CFLAGS variable depending on which quake3 version you want to compile. If not compiling for Neon, select the one containing the ARMv5 target.
   * Save Makefile.local
   * Type 'make' to compile it all
-  * You will find libquake3.so in build/release-linux-arm and the libcgamearm/libuiarm/libqagamearm are in the client subdirectory.
+  * You will find libquake3.so in build/release-linux-arm and the libcgamearm/libuiarm/libqagamearm are in the baseq3 subdirectory.
 
 == Building KwaakJNI ==
   * Copy the kwaak directory to the 'apps' directory of the NDK. Then execute 'make APP=kwaak' from the root of the NDK directory. (There might be a better way for this but I'm not aware of it).
